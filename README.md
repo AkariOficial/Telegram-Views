@@ -6,6 +6,9 @@
     <img src="https://user-images.githubusercontent.com/58480908/214900411-27f77bd2-ed12-417f-8d41-fb95b8670b71.png" width=130/>
 </p>
 
+### Vídeo demonstrativo do projeto:
+Telegram: [Upload Vídeo](https://t.me/+Zw87X09JGYRkZDI0)
+
 ## Help
 > Telegram: [akari](https://t.me/AkariOficial)
 
