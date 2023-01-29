@@ -14,6 +14,6 @@ Telegram: [Upload Vídeo](https://t.me/+Zw87X09JGYRkZDI0)
 
 ### install requirements:
 ```
- git clone https://github.com/AkariOficial/Telegram-Views; cd Telegram-Views; pip install -r requirements.txt
+ git clone https://github.com/AkariOficial/Telegram-Views; cd Telegram-Views; pip install -r requirements.txt; clear; 
 ```
 
