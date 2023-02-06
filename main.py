@@ -5,9 +5,12 @@ from os import system, name
 from threading import Thread, active_count
 from re import search, compile
 
-THREADS = 500
+THREADS = int(input("Quantas threads deseja? "))
+
 PROXIES_TYPES = ('http', 'socks4', 'socks5')
+
 USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36'
+
 REGEX = compile(r"(?:^|\D)?(("+ r"(?:[1-9]|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])"
                 + r"\." + r"(?:\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])"
                 + r"\." + r"(?:\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])"
@@ -16,7 +19,9 @@ REGEX = compile(r"(?:^|\D)?(("+ r"(?:[1-9]|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])"
                 + r"|65[0-4]\d{2}|655[0-2]\d|6553[0-5])")
                 + r")(?:\D|$)")
 
+
 errors = open('errors.txt', 'a+')
+
 cfg = ConfigParser(interpolation=None)
 cfg.read("config.ini", encoding="utf-8")
 
