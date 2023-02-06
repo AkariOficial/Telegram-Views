@@ -122,7 +122,7 @@ def check_views():
 
 
 logo = '''
-   ~ Telegram Auto Views ~
+   ~ Telegram + Views ~
        ~ @AkariOficial ~
 '''
 
@@ -132,10 +132,10 @@ def tui():
         print(logo)
         print(f'''
   [ Canal ]: {channel.capitalize()}/{post}
-  [ Live Views ]: {real_views}
+  [ Views ]: {real_views}
  
-  [ Conexão Errors ]: {proxy_errors}
-  [ Token Errors ]: {token_errors}
+  [ Conexão Erros ]: {proxy_errors}
+  [ Token   Erros ]: {token_errors}
  
   [ Threads ]: {active_count()}
         ''')
@@ -150,7 +150,7 @@ try:
     params={'embed': '1', 'mode': 'tme'}, headers={'referer': f'https://t.me/{channel}/{post}', 'user-agent': USER_AGENT}).text).group(1)
 except: print(' [ OUTPUT ] Error | Channel Or Post Not Found!');sleep(3);exit()
 else:
-    print(' [ OUTPUT ] Stated | Wait few seconds to run threads')
+    print(' [ OUTPUT ] declarado | Aguarde alguns segundos para executar os threads...')
     Thread(target=start_view).start()
     Thread(target=check_views).start()
     sleep(7.5);system('cls' if name == 'nt' else 'clear')
